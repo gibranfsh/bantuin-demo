@@ -375,15 +375,18 @@ function FeedPageContent() {
           {isLoading ? (
             <LoadingSkeleton variant="list" count={4} />
           ) : scheduleItems.length === 0 ? (
-            <div className="border border-dashed border-border rounded-xl bg-card p-12 text-center max-w-lg">
-              <span className="inline-flex p-3 rounded-full bg-primary/10 text-primary mb-3">
-                <Calendar className="size-6" />
+            <div className="border border-dashed border-border rounded-2xl bg-card p-8 md:p-16 text-center max-w-2xl mx-auto min-h-[420px] flex flex-col items-center justify-center shadow-e1 mt-8">
+              <span className="inline-flex p-4 rounded-full bg-primary/10 text-primary mb-4 animate-float">
+                <Calendar className="size-8" strokeWidth={1.5} />
               </span>
-              <h3 className="text-sm font-bold text-ink">No active schedules</h3>
-              <p className="text-xs text-ink-soft mt-1 max-w-xs mx-auto leading-relaxed">
+              <h3 className="text-base font-bold text-ink">No active schedules</h3>
+              <p className="text-xs text-ink-soft mt-2 max-w-sm mx-auto leading-relaxed font-medium">
                 You have no pending deadlines or active tasks. Browse the home feed to find local favors.
               </p>
-              <Button onClick={() => setActiveTab("browse")} className="mt-4 h-9 text-xs font-bold gap-1 cursor-pointer">
+              <Button
+                onClick={() => setActiveTab("browse")}
+                className="mt-6 h-10 px-5 text-xs font-bold gap-1.5 cursor-pointer shadow-md hover:shadow-e2 transition-all"
+              >
                 Find Favors
               </Button>
             </div>
