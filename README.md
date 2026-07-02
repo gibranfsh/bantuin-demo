@@ -6,7 +6,7 @@ Bantu.in makes everyday favors easy to ask for and easy to help with. Neighbors 
 
 **Status:** Frontend-only MVP for demo and validation. No backend, no platform fees, no monetization.
 
-**Live demo:** [bantuin-demo.vercel.app](https://bantuin-demo-hrlqpfk2q-gibranfshs-projects.vercel.app/login) — click **Continue with Google** to explore (mock auth, no credentials needed).
+**Live demo:** [bantuin-demo.vercel.app](https://bantuin-demo.vercel.app/login) — click **Continue with Google** to explore (mock auth, no credentials needed).
 
 ---
 
